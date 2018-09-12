@@ -8,14 +8,21 @@
 
 import UIKit
 
+
 class Photo: NSObject {
     
-    var name: String
+    var id: Int
+    var width: Int
+    var height: Int
     var url: String
     
-    init(name: String, url: String) {
-        self.name = name
+    
+    init(id: Int, url: String, width: Int, height: Int) {
+        self.id = id
+        self.width = width
+        self.height = height
         self.url = url
+        
         super.init()
     }
 }
